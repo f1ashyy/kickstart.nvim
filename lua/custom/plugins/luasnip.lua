@@ -1,5 +1,5 @@
 -- ============================================================
--- SECTION 8: AUTOCOMPLETE & SNIPPETS
+-- SECTION 8:  & SNIPPETS
 -- blink.cmp and luasnip setup
 -- ============================================================
 -- [[ Snippet Engine ]]

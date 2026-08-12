@@ -131,8 +131,26 @@ vim.pack.add {
   gh 'mason-org/mason-lspconfig.nvim',
   gh 'WhoIsSethDaniel/mason-tool-installer.nvim',
 
+  -- debugger given given by kickstart
+  gh 'mfussenegger/nvim-dap',
+  gh 'rcarriga/nvim-dap-ui',
+  gh 'nvim-neotest/nvim-nio',
+  -- gh '/mason-org/mason.nvim',
+  gh 'jay-babu/mason-nvim-dap.nvim',
+  -- gh 'leoluz/nvim-dap-go',  (Go Debugger)
+  gh 'mfussenegger/nvim-dap-python',
+
   -- Formatter
   gh 'stevearc/conform.nvim',
+
+  -- Linting
+  gh 'mfussenegger/nvim-lint',
+
+  -- Rainbow brackets
+  gh 'hiphish/rainbow-delimiters.nvim',
+
+  -- Indent_lines
+  gh 'lukas-reineke/indent-blankline.nvim',
 
   -- [[ Snippet Engine ]]
 
@@ -143,16 +161,15 @@ vim.pack.add {
     version = vim.version.range '2.*',
   },
 
-  -- [[ Autocomplete Engine ]]
+  -- Autocomplete Engine
   {
     src = gh 'saghen/blink.cmp',
     version = vim.version.range '1.*',
   },
 
-  -- [[ Configure Treesitter ]]
-  --  Used to highlight, edit, and navigate code
-  --
-  --  See `:help nvim-treesitter-intro`
+  -- Configure Treesitter
+  -- Used to highlight, edit, and navigate code
+  -- See `:help nvim-treesitter-intro`
 
   -- NOTE: You can also specify a branch or a specific commit
   {

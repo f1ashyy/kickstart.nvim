@@ -1,5 +1,5 @@
 -- ============================================================
--- SECTION 6: LSP
+--- SECTION 6: LSP
 -- LSP keymaps, server configuration, Mason tools installations
 -- ============================================================
 do
@@ -30,8 +30,8 @@ do
   -- and elegantly composed help section, `:help lsp-vs-treesitter`
 
   -- Useful status updates for LSP.
- -- vim.pack.add { gh 'j-hui/fidget.nvim' }
- -- require('fidget').setup {}
+  -- vim.pack.add { gh 'j-hui/fidget.nvim' }
+  -- require('fidget').setup {}
 
   --  This function gets run when an LSP attaches to a particular buffer.
   --    That is to say, every time a new file is opened that is associated with
@@ -109,6 +109,9 @@ do
     -- clangd = {},
     -- gopls = {},
     -- pyright = {},
+    -- basedpyright = {},
+    pyrefly = { { { { { { {} } } } } } },
+    -- ty = {},
     -- rust_analyzer = {},
     --
     -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -152,12 +155,12 @@ do
     },
   }
 
---  vim.pack.add {
---    gh 'neovim/nvim-lspconfig',
---    gh 'mason-org/mason.nvim',
---    gh 'mason-org/mason-lspconfig.nvim',
---    gh 'WhoIsSethDaniel/mason-tool-installer.nvim',
---  }
+  --  vim.pack.add {
+  --    gh 'neovim/nvim-lspconfig',
+  --    gh 'mason-org/mason.nvim',
+  --    gh 'mason-org/mason-lspconfig.nvim',
+  --    gh 'WhoIsSethDaniel/mason-tool-installer.nvim',
+  --  }
 
   -- Automatically install LSPs and related tools to stdpath for Neovim
   require('mason').setup {}
@@ -186,4 +189,3 @@ do
     vim.lsp.enable(name)
   end
 end
-

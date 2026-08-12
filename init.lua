@@ -63,17 +63,17 @@ I hope you enjoy your Neovim journey,
 
 P.S. You can delete this when you're done too. It's your config now! :)
 --]]
-require("config.options")
-require("config.keymaps")
-require("config.autocmds")
+require 'config.options'
+require 'config.keymaps'
+require 'config.autocmds'
 
-require("pack")
+require 'pack'
 
 -- require 'kickstart.plugins.debug'
 -- require 'kickstart.plugins.indent_line'
 -- require 'kickstart.plugins.lint'
 -- require 'kickstart.plugins.autopairs'
-require 'kickstart.plugins.neo-tree'
+-- require 'kickstart.plugins.neo-tree'
 -- require 'kickstart.plugins.gitsigns' -- adds gitsigns recommended keymaps
 
 require 'custom.plugins'
