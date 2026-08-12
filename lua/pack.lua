@@ -152,7 +152,19 @@ vim.pack.add {
   -- Indent_lines
   gh 'lukas-reineke/indent-blankline.nvim',
 
-  -- [[ Snippet Engine ]]
+  -- Auto pairs
+  gh 'windwp/nvim-autopairs',
+
+  -- Neo-Tree
+  {
+    src = 'https://github.com/nvim-neo-tree/neo-tree.nvim',
+    version = vim.version.range '*',
+  },
+  -- Neo tree dependencies
+  gh 'nvim-lua/plenary.nvim',
+  gh 'MunifTanjim/nui.nvim',
+
+  -- Snippet Engine
 
   -- NOTE: You can also specify plugin using a version range for its git tag.
   --  See `:help vim.version.range()` for more info
