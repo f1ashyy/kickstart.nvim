@@ -10,6 +10,7 @@ do
     format_on_save = function(bufnr)
       -- You can specify filetypes to autoformat on save here:
       local enabled_filetypes = {
+        c = true,
         lua = true,
         python = true,
       }
@@ -26,6 +27,7 @@ do
     formatters_by_ft = {
       -- rust = { 'rustfmt' },
       -- Conform can also run multiple formatters sequentially
+      c = { 'clang_format' },
       python = { 'ruff_organize_imports', 'ruff_format' },
       lua = { 'stylua' },
       --

@@ -63,6 +63,7 @@ I hope you enjoy your Neovim journey,
 
 P.S. You can delete this when you're done too. It's your config now! :)
 --]]
+vim.loader.enable()
 require 'config.options'
 require 'config.keymaps'
 require 'config.autocmds'
@@ -80,5 +81,7 @@ require 'custom.plugins'
 
 -- NOTE: You can add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
 
+--Python
+vim.g.python3_host_prog = '/home/flashy/.pyenv/versions/3.14.6/bin/python'
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

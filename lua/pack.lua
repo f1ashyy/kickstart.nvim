@@ -155,15 +155,23 @@ vim.pack.add {
   -- Auto pairs
   gh 'windwp/nvim-autopairs',
 
+  -- Undo Tree
+  gh 'mbbill/undotree',
+
   -- Neo-Tree
   {
     src = 'https://github.com/nvim-neo-tree/neo-tree.nvim',
     version = vim.version.range '*',
   },
   -- Neo tree dependencies
-  gh 'nvim-lua/plenary.nvim',
+  gh 'nvim-lua/plenary.nvim', -- this one is also needed for harpoon 2
   gh 'MunifTanjim/nui.nvim',
 
+  -- Harpoon 2
+  {
+    src = gh 'ThePrimeagen/harpoon',
+    version = 'harpoon2',
+  },
   -- Snippet Engine
 
   -- NOTE: You can also specify plugin using a version range for its git tag.

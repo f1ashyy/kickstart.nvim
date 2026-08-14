@@ -94,4 +94,4 @@ dap.listeners.before.event_exited['dapui_config'] = dapui.close
 --     detached = vim.fn.has 'win32' == 0,
 --   },
 -- }
-require('dap-python').setup()
+require('dap-python').setup(vim.fn.stdpath 'data' .. '/mason/packages/debugpy/venv/bin/python')
